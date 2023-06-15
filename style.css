@@ -24,12 +24,77 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .quoteCont{
-    width: 600px;
-    margin-right: -150px;
+    width: 500px;
+    margin-right: -50px;
     z-index: 1;
+    position: relative;
+}
+
+.quoteCont::before{
+    content: url(./images/pattern-quotes.svg);
+    /* background-image: ; */
+    top: -50px;
+    left: 45px;
+    position: absolute;
+    transform: scale(.7);
+}
+
+.imageCont{
+    position: relative;
+}
+
+.imageCont img{
+    width: 400px;
+}
+.quoteCont h1{
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--DarkBlue);
+}
+
+.navigations{
+    width: 85px;
+    background-color: var(--white);
+    height: 40px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    box-shadow: -0px 10px 20px  rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigations button{
+    width: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigations button img{
+   width: 10px; 
+}
+
+
+.userTestimonial{
+    display: flex;
+    align-items: center;
+}
+
+.quoteCont .userTestimonial h2{
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(--DarkBlue);
+}
+.quoteCont .userTestimonial p{
+    color: var(--GrayishBlue);
 }
 
 .attribution {
@@ -44,4 +109,5 @@ main {
 :root{
     --DarkBlue: hsl(240, 38%, 20%);
     --GrayishBlue: hsl(240, 18%, 77%);
+    --white: #fff;
 }
