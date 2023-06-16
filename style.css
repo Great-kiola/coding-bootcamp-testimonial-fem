@@ -28,17 +28,17 @@ main {
 }
 
 .quoteCont{
-    width: 500px;
-    margin-right: -50px;
-    z-index: 1;
+    width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quoteCont::before{
     content: url(./images/pattern-quotes.svg);
-    /* background-image: ; */
-    top: -50px;
-    left: 45px;
+    top: 35px;
+    left: 30px;
     position: absolute;
     transform: scale(.7);
 }
@@ -86,6 +86,15 @@ main {
 .userTestimonial{
     display: flex;
     align-items: center;
+}
+
+.firstTestimonial{
+    display: flex;
+    align-items: center;
+}
+
+.secondTestimonial{
+    display: none;
 }
 
 .quoteCont .userTestimonial h2{
