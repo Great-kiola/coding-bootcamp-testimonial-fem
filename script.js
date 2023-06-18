@@ -1,5 +1,5 @@
-let arrRight = document.querySelector('.arrRight');
-let arrLeft = document.querySelector('.arrLeft');
+let arrRight = document.querySelectorAll('.arrRight');
+let arrLeft = document.querySelectorAll('.arrLeft');
 
 let secondTestimonial = document.querySelector('.secondTestimonial');
 let firstTestimonial = document.querySelector('.firstTestimonial');
@@ -14,8 +14,15 @@ arrRight.forEach(right => {
     });
 });
 
+arrLeft.forEach(left => {
+    left.addEventListener('click', function (e) {
+        
+        e.preventDefault();
 
-
+        firstTestimonial.style.display = 'none';
+        secondTestimonial.style.display = 'flex';
+    });
+});
 
 
 // arrRight.addEventListener('click', function(e){
@@ -31,9 +38,9 @@ arrRight.forEach(right => {
 
 // });
 
-arrLeft.addEventListener('click', function(e){
-    e.preventDefault();
+// arrLeft.addEventListener('click', function(e){
+//     e.preventDefault();
 
-    firstTestimonial.style.display = 'none';
-    secondTestimonial.style.display = 'flex';
-});
+//     firstTestimonial.style.display = 'none';
+//     secondTestimonial.style.display = 'flex';
+// });
