@@ -4,7 +4,7 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img src="./images/Screenshot.png" alt="Completed image Screenshot">
 
 ### The challenge
 
